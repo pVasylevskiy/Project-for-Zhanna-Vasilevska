@@ -80,10 +80,10 @@
 
   &--inst{
     display: block;
-    background-image: url(./images/instagram.png);
+    // background-image: url(./images/instagram.png);
 
     &:hover{
-      background: url(./images/instagram.png), rgb(255, 95, 122);
+      // background: url(./images/instagram.png), rgb(255, 95, 122);
       background-size: 27px, cover;
       background-position: center, center;
       background-repeat: no-repeat, no-repeat;
@@ -93,10 +93,10 @@
   }
 
   &--telegram{
-    background-image: url(./images/telegram.png);
+    // background-image: url(../images/telegram.png);
 
     &:hover{
-      background: url(./images/telegram.png), #24A1DE;
+      // background: url(../images/telegram.png), #24A1DE;
       background-size: 27px, cover;
       background-position: center, center;
       background-repeat: no-repeat, no-repeat;
@@ -109,7 +109,7 @@
     background-image: url(./images/whatsapp.png);
 
     &:hover{
-      background: url(./images/whatsapp.png), #25d366;
+      // background: url(./images/whatsapp.png), #25d366;
       background-size: 27px, cover;
       background-position: center, center;
       background-repeat: no-repeat, no-repeat;
