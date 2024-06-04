@@ -4,39 +4,39 @@
   &--first{
     display: flex;
     position: relative;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
 
-    @media (max-width: 980px) {
-      margin-top: 100px;
+    @media (max-width: $tablet-min-width) {
+      margin-top: 70px;
     }
 
     &__description{
       display: flex;
+      justify-content: center;
       flex-direction: column;
       flex-wrap: wrap;
-      margin-inline: auto;
+      gap: 15px;
+      padding-inline: 22px;
+      padding-block: 45px ;
 
       &__first-text{
         margin: 0;
         color: $main-font-color;
-        font-size: 12px;
+        font-size: 40px;
         font-weight: 700;
       }
 
       &__second-text{
         color: $main-font-color;
-        font-size: 12px;
+        font-size: 17px;
         font-weight: normal;
-        word-wrap: break-word;
       }
 
       &__button{
         display: block;
 
-        width: 100px;
+        width: 100%;
         height: 60px;
         line-height: 60px;
         text-align: center;
@@ -45,8 +45,8 @@
         background-color: #A063C9;
         color: white;
         border-radius: 15px;
-        font-weight: 500;
-        font-size: 9px;
+        font-weight: 600;
+        font-size: 16px;
 
         transition: all $transition-dur;
 
@@ -56,9 +56,17 @@
       }
     }
     &__image{
-      height: 100px;
+      display: block;
+      width: 80%;
+      @include onTabled{
+        width: 500px;
+      }
       border-radius: 25%;
       margin-inline: auto;
+
+      border:solid 7px #A063C9;
+
+      // box-shadow: 0 0px 40px;
     }
   }
 }

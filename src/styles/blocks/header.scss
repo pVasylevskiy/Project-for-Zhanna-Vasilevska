@@ -16,16 +16,6 @@
   background-color: #F0D7D5ac;
   backdrop-filter: blur(15px);
 
-// перенести надо в блок Icons!!!
-  &__burger-menu{
-    margin: 0;
-    // padding-inline: 35px;
-
-    @include onTabled{
-      display: none;
-    }
-  }
-
 
   &__container-icon-nav{
     display: flex;

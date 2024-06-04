@@ -19,6 +19,9 @@
 
   &--burger{
     background-image: url(./images/Icon-Burger-menu.png);
+    @include onTabled{
+      display: none;
+    }
   }
 
   &--inst-active{
@@ -26,7 +29,7 @@
   }
 
   &--close{
-    // margin-inline: 15px;
+    background-image: url(./images/Icon-Close.png);
   }
 
   &--inst{

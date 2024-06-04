@@ -1,6 +1,7 @@
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  border-collapse: collapse;
 }
 
 .page {
@@ -23,14 +24,6 @@
   background-color: rgba(240, 215, 213, 0.6745098039);
   backdrop-filter: blur(15px);
 }
-.header__burger-menu {
-  margin: 0;
-}
-@media (min-width: 744px) {
-  .header__burger-menu {
-    display: none;
-  }
-}
 .header__container-icon-nav {
   display: flex;
   align-items: center;
@@ -45,7 +38,7 @@
   display: none;
   gap: 10px;
 }
-@media (min-width: 744px) {
+@media (min-width: 690px) {
   .header__icons {
     display: flex;
   }
@@ -55,7 +48,7 @@
   display: none;
   align-items: center;
 }
-@media (min-width: 744px) {
+@media (min-width: 690px) {
   .nav {
     display: flex;
   }
@@ -99,7 +92,7 @@
   background-size: 17px;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(160, 99, 201, 0.1960784314);
+  background-color: rgba(102, 102, 102, 0.1647058824);
   transition: all 0.4s;
 }
 .icon__link {
@@ -110,8 +103,16 @@
 .icon--burger {
   background-image: url(./images/Icon-Burger-menu.png);
 }
+@media (min-width: 690px) {
+  .icon--burger {
+    display: none;
+  }
+}
 .icon--inst-active {
   background-image: url(./images/instagram.png);
+}
+.icon--close {
+  background-image: url(./images/Icon-Close.png);
 }
 .icon--inst {
   display: block;
@@ -145,63 +146,6 @@
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
   transform: translate(0, -5px);
-}
-
-.section {
-  height: 100vh;
-}
-.section--first {
-  display: flex;
-  position: relative;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-@media (max-width: 980px) {
-  .section--first {
-    margin-top: 100px;
-  }
-}
-.section--first__description {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-inline: auto;
-}
-.section--first__description__first-text {
-  margin: 0;
-  color: black;
-  font-size: 12px;
-  font-weight: 700;
-}
-.section--first__description__second-text {
-  color: black;
-  font-size: 12px;
-  font-weight: normal;
-  word-wrap: break-word;
-}
-.section--first__description__button {
-  display: block;
-  width: 100px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  text-decoration: none;
-  background-color: #A063C9;
-  color: white;
-  border-radius: 15px;
-  font-weight: 500;
-  font-size: 9px;
-  transition: all 0.4s;
-}
-.section--first__description__button:hover {
-  background-color: #761B6E;
-}
-.section--first__image {
-  height: 100px;
-  border-radius: 25%;
-  margin-inline: auto;
 }
 
 .menu {
@@ -253,6 +197,8 @@
   height: 50px;
   width: 100%;
   line-height: 50px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.15);
+  border-collapse: collapse;
 }
 .menu__nav__link {
   position: relative;
@@ -272,6 +218,70 @@
   align-items: center;
   position: absolute;
   bottom: 30px;
+}
+
+.section {
+  height: 100vh;
+}
+.section--first {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 690px) {
+  .section--first {
+    margin-top: 70px;
+  }
+}
+.section--first__description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-inline: 22px;
+  padding-block: 45px;
+}
+.section--first__description__first-text {
+  margin: 0;
+  color: black;
+  font-size: 40px;
+  font-weight: 700;
+}
+.section--first__description__second-text {
+  color: black;
+  font-size: 17px;
+  font-weight: normal;
+}
+.section--first__description__button {
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #A063C9;
+  color: white;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.4s;
+}
+.section--first__description__button:hover {
+  background-color: #761B6E;
+}
+.section--first__image {
+  display: block;
+  width: 80%;
+  border-radius: 25%;
+  margin-inline: auto;
+  border: solid 7px #A063C9;
+}
+@media (min-width: 690px) {
+  .section--first__image {
+    width: 500px;
+  }
 }
 
 
