@@ -3,48 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="./styles/main.css"> -->
+  <link rel="stylesheet" href="./styles/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body class="page">
-  <header class="header">
-    <div class="header__container-logo-nav">
+  <div class="header__container">
+
+    <header class="header">
       <a href="#" class="header__logo">
         <img src="./styles/images/LogoMacket.png" alt="Logo">
       </a>
   
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link">About me</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Servises</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Prises</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+      <div class="header__container-icon-nav">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Про меня</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Блог</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Цены</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__icons">
+          <div class="icon icon--inst">
+            <a href="#" class="icon__link"></a>
+          </div>
+          <div class="icon icon--telegram">
+            <a href="#" class="icon__link"></a>
+          </div>
+          <div class="icon icon--whats">
+            <a href="#" class="icon__link"></a>
+          </div>
+          </div>
+          <div class="header__burger-menu">
+          <div class="icon icon--burger">
+            <a href="#menu" class="icon__link"></a>
+          </div>
+        </div>
+      </div>
+  </div>
 
-    <div class="header__icons">
-      <div class="icon icon--inst">
-        <a href="#" class="icon__link"></a>
+    <aside class="menu" id="menu">
+      <div class="menu__top">
+        <a href="#"  class="header__logo">
+          <img src="./styles/images/LogoMacket.png" alt="Nothing logo">
+        </a>
+
+        <a href="#" class="icon icon--close"></a>
       </div>
-      <div class="icon icon--telegram">
-        <a href="#" class="icon__link"></a>
+
+      <div class="menu__content">
+        <nav class="menu__nav">
+          <ul class="menu__nav__list">
+            <li class="menu__nav__item">
+              <a class="menu__nav__link" href="#recomended">Про меня</a>
+            </li>
+            <li class="menu__nav__item">
+              <a class="menu__nav__link" href="#categories">Блог</a>
+            </li>
+            <li class="menu__nav__item">
+              <a class="menu__nav__link" href="#how-to-buy">Цены</a>
+            </li>
+            <li class="menu__nav__item">
+              <a class="menu__nav__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu__icons">
+          <div class="icon icon--inst-active">
+            <a href="" class="icon__link"></a>
+          </div>
+          <div class="icon icon--telegram">
+            <a href="" class="icon__link"></a>
+          </div>
+          <div class="icon icon--whats">
+            <a href="" class="icon__link"></a>
+          </div>
+          </div>
+        </div>
       </div>
-      <div class="icon icon--whats">
-        <a href="#" class="icon__link"></a>
-      </div>
-    </div>
+    </aside>
   </header>
-</body>
+
+  <main class="main">
+    <section class="section section--first">
+      <img src="./styles/images/I’m on a path and the Universe is my guide.jpg" alt="" class="section--first__image">
+      <!-- <div class="section--first__description">
+        <p class="section--first__description__first-text">
+         Жанна Василевская
+        </p>
+        <h3 class="section--first__description__second-text">
+          Психологическое консультирование по всему миру <br> на русском и украинском языках
+        </h3>
+        <a href="#" class="section--first__description__button">Записаться на консультацию</a>
+      </div> -->
+    </section>
 </html>

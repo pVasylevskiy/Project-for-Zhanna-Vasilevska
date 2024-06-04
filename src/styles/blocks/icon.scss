@@ -1,0 +1,74 @@
+.icon{
+  height: $icon-size;
+  width: $icon-size;
+  border-radius: 50%;
+
+  background-size: 17px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color:$icon-color;
+  ;
+  transition: all $transition-dur;
+
+  &__link{
+    display: block;
+    height: $icon-size;
+    width: $icon-size;
+  }
+
+  &--burger{
+    background-image: url(./images/Icon-Burger-menu.png);
+  }
+
+  &--inst-active{
+    background-image: url(./images/instagram.png);
+  }
+
+  &--close{
+    // margin-inline: 15px;
+  }
+
+  &--inst{
+    display: block;
+    background-image: url(./images/instagram.png);
+
+
+    &:hover{
+      background: url(./images/instagram.png), rgb(255, 95, 122);
+      background-size: 17px, cover;
+      background-position: center, center;
+      background-repeat: no-repeat, no-repeat;
+
+      transform: translate(0, -5px);
+    }
+  }
+
+  &--telegram{
+    display: flex;
+    align-items: center;
+    background-image: url(./images/telegram.png);
+
+    &:hover{
+      background: url(./images/telegram.png), #24A1DE;
+      background-size: 17px, cover;
+      background-position: center, center;
+      background-repeat: no-repeat, no-repeat;
+
+      transform: translate(0, -5px)
+    }
+  }
+
+  &--whats{
+    background-image: url(./images/whatsapp.png);
+
+    &:hover{
+      background: url(./images/whatsapp.png), #4bd767;
+      background-size: 17px, cover;
+      background-position: center, center;
+      background-repeat: no-repeat, no-repeat;
+
+      transform: translate(0, -5px);
+    }
+  }
+}

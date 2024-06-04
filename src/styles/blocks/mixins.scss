@@ -1,0 +1,5 @@
+@mixin onTabled () {
+  @media (min-width: $tablet-min-width) {
+    @content;
+   }
+}

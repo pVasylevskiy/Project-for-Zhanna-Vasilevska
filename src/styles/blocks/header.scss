@@ -1,0 +1,50 @@
+.header{
+  box-sizing: border-box;
+  top: 0;
+  z-index: 99;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 45px;
+  padding-top: 30px;
+  
+  height: 60px;
+  position: fixed;
+  width: 100%;
+
+  background-color: #F0D7D5ac;
+  backdrop-filter: blur(15px);
+
+// перенести надо в блок Icons!!!
+  &__burger-menu{
+    margin: 0;
+    // padding-inline: 35px;
+
+    @include onTabled{
+      display: none;
+    }
+  }
+
+
+  &__container-icon-nav{
+    display: flex;
+    
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__logo{
+    display: flex;
+    height: 30px;
+    width: 30px;
+  }
+
+  &__icons{
+    display: none;
+    @include onTabled{
+      display: flex;
+    }
+    gap: 10px;
+  }
+}
