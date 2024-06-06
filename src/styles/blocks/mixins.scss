@@ -1,5 +1,11 @@
-@mixin onTabled () {
+@mixin onTab () {
   @media (min-width: $tablet-min-width) {
+    @content;
+   }
+}
+
+@mixin onLap () {
+  @media (min-width: $laptop-min-width) {
     @content;
    }
 }

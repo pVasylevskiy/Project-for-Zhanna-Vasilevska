@@ -1,6 +1,6 @@
 .nav{
   display: none;
-  @include onTabled{
+  @include onLap{
     display: flex;
   }
   align-items: center;

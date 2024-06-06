@@ -7,14 +7,19 @@
   justify-content: space-between;
   align-items: center;
   padding-inline: 45px;
-  padding-top: 30px;
+  padding-top: 10px;
   
-  height: 60px;
+  height: 80px;
   position: fixed;
   width: 100%;
 
   background-color: #F0D7D5ac;
   backdrop-filter: blur(15px);
+
+  @include onLap{
+    padding-top: 0;
+    height: 60px;
+  }
 
 
   &__container-icon-nav{
@@ -32,7 +37,7 @@
 
   &__icons{
     display: none;
-    @include onTabled{
+    @include onLap{
       display: flex;
     }
     gap: 10px;

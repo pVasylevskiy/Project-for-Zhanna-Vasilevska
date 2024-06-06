@@ -19,23 +19,23 @@
 
   &--burger{
     background-image: url(./images/Icon-Burger-menu.png);
-    @include onTabled{
+    @include onLap{
       display: none;
     }
   }
 
-  &--inst-active{
-    background-image: url(./images/instagram.png);
-  }
-
+  
   &--close{
     background-image: url(./images/Icon-Close.png);
   }
-
+  
   &--inst{
     display: block;
     background-image: url(./images/instagram.png);
-
+    
+    &-phone{
+      background-image: url(./images/instagram.png);
+    }
 
     &:hover{
       background: url(./images/instagram.png), rgb(255, 95, 122);
@@ -52,6 +52,10 @@
     align-items: center;
     background-image: url(./images/telegram.png);
 
+    &-phone{
+      background-image: url(./images/telegram.png);
+    }
+
     &:hover{
       background: url(./images/telegram.png), #24A1DE;
       background-size: 17px, cover;
@@ -64,6 +68,10 @@
 
   &--whats{
     background-image: url(./images/whatsapp.png);
+
+    &-phone{
+      background-image: url(./images/whatsapp.png);
+    }
 
     &:hover{
       background: url(./images/whatsapp.png), #4bd767;

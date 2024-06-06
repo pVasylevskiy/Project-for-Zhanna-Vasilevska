@@ -17,12 +17,18 @@
   justify-content: space-between;
   align-items: center;
   padding-inline: 45px;
-  padding-top: 30px;
-  height: 60px;
+  padding-top: 10px;
+  height: 80px;
   position: fixed;
   width: 100%;
   background-color: rgba(240, 215, 213, 0.6745098039);
   backdrop-filter: blur(15px);
+}
+@media (min-width: 1024px) {
+  .header {
+    padding-top: 0;
+    height: 60px;
+  }
 }
 .header__container-icon-nav {
   display: flex;
@@ -38,7 +44,7 @@
   display: none;
   gap: 10px;
 }
-@media (min-width: 690px) {
+@media (min-width: 1024px) {
   .header__icons {
     display: flex;
   }
@@ -48,7 +54,7 @@
   display: none;
   align-items: center;
 }
-@media (min-width: 690px) {
+@media (min-width: 1024px) {
   .nav {
     display: flex;
   }
@@ -103,19 +109,19 @@
 .icon--burger {
   background-image: url(./images/Icon-Burger-menu.png);
 }
-@media (min-width: 690px) {
+@media (min-width: 1024px) {
   .icon--burger {
     display: none;
   }
-}
-.icon--inst-active {
-  background-image: url(./images/instagram.png);
 }
 .icon--close {
   background-image: url(./images/Icon-Close.png);
 }
 .icon--inst {
   display: block;
+  background-image: url(./images/instagram.png);
+}
+.icon--inst-phone {
   background-image: url(./images/instagram.png);
 }
 .icon--inst:hover {
@@ -130,6 +136,9 @@
   align-items: center;
   background-image: url(./images/telegram.png);
 }
+.icon--telegram-phone {
+  background-image: url(./images/telegram.png);
+}
 .icon--telegram:hover {
   background: url(./images/telegram.png), #24A1DE;
   background-size: 17px, cover;
@@ -138,6 +147,9 @@
   transform: translate(0, -5px);
 }
 .icon--whats {
+  background-image: url(./images/whatsapp.png);
+}
+.icon--whats-phone {
   background-image: url(./images/whatsapp.png);
 }
 .icon--whats:hover {
@@ -178,9 +190,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+  height: 80px;
   padding-inline: 45px;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 .menu__nav {
   margin-bottom: 48px;
@@ -225,13 +237,16 @@
 }
 .section--first {
   display: flex;
-  position: relative;
   flex-direction: column;
   justify-content: center;
+  margin-top: 80px;
 }
-@media (max-width: 690px) {
+@media (min-width: 1024px) {
   .section--first {
-    margin-top: 70px;
+    margin: 0;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 .section--first__description {
@@ -239,7 +254,7 @@
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 20px;
   padding-inline: 22px;
   padding-block: 45px;
 }
@@ -248,11 +263,22 @@
   color: black;
   font-size: 40px;
   font-weight: 700;
+  line-height: 40px;
+}
+@media (min-width: 1024px) {
+  .section--first__description__first-text {
+    font-size: 55px;
+  }
 }
 .section--first__description__second-text {
   color: black;
   font-size: 17px;
   font-weight: normal;
+}
+@media (min-width: 1024px) {
+  .section--first__description__second-text {
+    font-size: 20px;
+  }
 }
 .section--first__description__button {
   display: block;
@@ -268,19 +294,32 @@
   font-size: 16px;
   transition: all 0.4s;
 }
+@media (min-width: 1024px) {
+  .section--first__description__button {
+    width: 60%;
+  }
+}
 .section--first__description__button:hover {
   background-color: #761B6E;
 }
 .section--first__image {
+  margin: 0;
   display: block;
-  width: 80%;
+  width: 70%;
   border-radius: 25%;
   margin-inline: auto;
   border: solid 7px #A063C9;
 }
 @media (min-width: 690px) {
   .section--first__image {
+    width: 45%;
+  }
+}
+@media (min-width: 1024px) {
+  .section--first__image {
+    height: 500px;
     width: 500px;
+    margin: 0;
   }
 }
 
